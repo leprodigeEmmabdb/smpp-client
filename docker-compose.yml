@@ -1,0 +1,8 @@
+services:
+  smppsim:
+    image: logica/smppsim
+    ports:
+      - "2775:2775"
+    environment:
+      - SMPPSIM_PASSWORD=smpppass
+      - SMPPSIM_SYSTEMID=smppuser
